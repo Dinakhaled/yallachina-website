@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8"/>
+    <!-- IE compatibility meta-->
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  	<!--First Mobile Meta-->
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yallachina</title>
+    <!-- Bootstrap Files -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <!-- swiper -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <!-- Main style -->
+    <link rel="stylesheet" href="css/rtl-arabic.css">
+    <link rel="stylesheet" href="css/style.css"/>
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!-- Bootstrap Files & jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+<!-- Start navbar -->
+<div class="background-nav backgroundloop-sc">
+<div class="container">
+  <nav class="navbar navbar-default main-nav">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img class="main-logo" src="images/logo.png" alt="yallachina" title="Yallachina"/></a>
+      </div>
+      <div class="search-dropdown">
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="dropdown categories-drop">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">التصنيفات<span class="caret"></span></a>
+              <ul class="dropdown-menu categories-nav-li">
+                <li><a href="#">السيارات والنقل</a></li>
+                <li><a href="#">الزراعة والغذاء</a></li>
+                <li><a href="#">الهدايا والحرف اليدوية</a></li>
+                <li><a href="#">الصحة والجمال</a></li>
+                <li><a href="#">المعادن والفلزات</a></li>
+                <li><a href="#">المطاط والبلاستيك</a></li>
+                <li><a href="#">الطاقة</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <div class="col-sm-3 col-md-3 pull-right">
+          <form class="navbar-form" role="search">
+          <div class="input-group">
+              <input type="text" class="form-control search-nav" placeholder="كلمة البحث" name="srch-term" id="srch-term">
+              <div class="input-group-btn">
+                  <button class="btn btn-default search-icon" style="z-index:9;" type="submit"><i class="fa fa-search"></i></button>
+              </div>
+          </div>
+          </form>
+          </div>
+         <ul class="nav-list nav navbar-nav navbar-left">
+              <li class="1-li"><a href="#">تغيير اللغة</a><div class="bg-img-flag"><img style="margin-right:6px; margin-top:5px;" class="nav-img" src="images/flag.png"></div></li>
+              <div class="border-left-s"></div>
+
+              <div class="lang-change">
+                <a href="#" style="display:block;text-decoration:none; color:#4a5c6c; margin-bottom:5px;">اللغة العربية <img src="images/flag-2.png" alt=""> </a>
+                <a href="#"  style="display:block;text-decoration:none; color:#4a5c6c;">اللغة الانجليزية <img src="images/flag.png" alt=""></a>
+              </div>
+
+                  <li class="2-li"><a href="#">العملة</a><div class="bg-img"><img style="margin-right:9px; margin-top:5px;" class="nav-img" src="images/dollar-sign.png"></div></li>
+              </li>
+              <div class="border-left"></div>
+
+              <div class="money-change">
+                <a href="#" style="display:block;text-decoration:none; color:#4a5c6c; margin-bottom:5px;">دولار<i style="margin-right:20px; color:#ed1c25;" class="fa fa-dollar"></i></a>
+                <a href="#"  style="display:block;text-decoration:none; color:#4a5c6c;">يورو <i style="margin-right:20px; color:#ed1c25;" class="fa fa-eur"></i></a>
+              </div>
+
+              <li><a href="#">المشتريات</a>
+                <div class="bg-img-r"><img style="margin-right:5px; margin-top:5px;" class="nav-img" src="images/buy-car.png" alt=""/></div>
+              </li>
+              <div class="border-left"></div>
+
+              <li><a href="#">المفضلة</a>
+                <div class="bg-img-r-heart"><img style="margin-right:6px; margin-top:5px;" class="nav-img" src="images/heart.png" alt=""/></div>
+              </li>
+          </ul>
+
+        </div><!-- /.navbar-collapse -->
+      </div>
+    </div><!-- /.container-fluid -->
+  </nav>
+  <button type="button" class="buy-sell-btn" name="button">
+    <i class="fa fa-user-o"></i>
+    إبدأ بيع وشراء
+  </button>
+  <!-- start home slider -->
+  <div class="row">
+    <div class="col-md-3">
+      <div class="categories">
+        <h3><i class="fa fa-flag-o"></i>التصنيفات</h3>
+        <ul class="list-unstyled">
+          <li><a href="#"> <img style="padding-left:20px;" src="images/categories-icon-1.png" alt="">السيارات والنقل</a></li>
+          <li><a href="#"> <img style="padding-left:20px;" src="images/categories-icon-2.png" alt="">الزارعة والغذاء</a></li>
+          <li><a href="#"> <img style="padding-left:20px;" src="images/categories-icon-3.png" alt="">الهدايا والحرف اليدوية</a></li>
+          <li><a href="#"> <img style="padding-left:20px;" src="images/categories-icon-4.png" alt="">الصحة والجمال</a></li>
+          <li><a href="#"> <img style="padding-left:20px;" src="images/categories-icon-5.png" alt="">المعادن والفلزات</a></li>
+          <li><a href="#"> <img style="padding-left:20px;" src="images/categories-icon-6.png" alt="">المطاط والبلاستيك</a></li>
+          <li><a href="#" style="margin-bottom:20px;"> <img style="padding-left:20px;" src="images/categories-icon-7.png" alt="">الطاقة</a></li>
+          <li><a href="#">قم بعرض تصنيفات أكثر !<i class="fa fa-arrow-down arrow"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+<!-- Slider main container -->
+<div class="container">
+<div class="row">
+<div class="swiper-container col-md-offset-1 col-md-8">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide" >
+          <div class="slider-content" style="background: url('images/slider-img.jpg');">
+            <span class="discount-num pull-left text-center">50<i class="dis-ico">%</i></span>
+            <p class="text-center slider-p">الأفضل لهذا الشهر</p>
+            <h1 class="text-center slider-h">ملابس جلدية فاخرة النوع الأن</h1>
+            <div class="border-slider-h text-center"></div>
+            <button class="btn slider-button center-block" type="button" name="button">
+              <!-- <img class="img-button" src="images/camera.png" alt=""> -->
+              <i class="button-icon fa fa-camera-retro"></i>
+              أعرض الأن
+            </button>
+          </div>
+        </div>
+        <div class="swiper-slide" style="background: url('images/slider-img.jpg');">
+          <div class="slider-content" style="background: url('images/slider-img.jpg');">
+            <span class="discount-num pull-left text-center">50<i class="dis-ico">%</i></span>
+            <p class="text-center slider-p">الأفضل لهذا الشهر</p>
+            <h1 class="text-center slider-h">ملابس جلدية فاخرة النوع الأن</h1>
+            <div class="border-slider-h text-center"></div>
+            <button class="btn slider-button center-block" type="button" name="button">
+              <!-- <img class="img-button" src="images/camera.png" alt=""> -->
+              <i class="button-icon fa fa-camera-retro"></i>
+              أعرض الأن
+            </button>
+          </div></div>
+        <div class="swiper-slide" style="background: url('images/slider-img.jpg');">
+          <div class="slider-content" style="background: url('images/slider-img.jpg');">
+            <span class="discount-num pull-left text-center">50<i class="dis-ico">%</i></span>
+            <p class="text-center slider-p">الأفضل لهذا الشهر</p>
+            <h1 class="text-center slider-h">ملابس جلدية فاخرة النوع الأن</h1>
+            <div class="border-slider-h text-center"></div>
+            <button class="btn slider-button center-block" type="button" name="button">
+              <!-- <img class="img-button" src="images/camera.png" alt=""> -->
+              <i class="button-icon fa fa-camera-retro"></i>
+              أعرض الأن
+            </button>
+          </div></div>
+    </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</div>
+  <!-- /home slider -->
+
+  <!-- products -->
+<div class="row products-row">
+  <div class="col-md-offset-3 col-md-1 products-cont ">
+    <img class="product-img" src="images/girl-1.png" alt="">
+      <div class="product-name">
+        <h2>جاكيت إلوان داز ..</h2>
+        <h3>أفضل أنواع الجواكت الصيفي </h3>
+      </div>
+      <div class="product-price">
+        <div class="pull-left price">
+          34 $
+        </div>
+        <div class="pull-right quantity">
+          أقل كمية   <span>9-3</span>
+        </div>
+      </div>
+  </div>
+
+  <div class="col-md-offset-2 col-md-1 products-cont">
+    <img class="product-img" src="images/girl-2.png" alt="">
+    <div class="product-name">
+      <h2>جاكيت إلوان داز ..</h2>
+      <h3>أفضل أنواع الجواكت الصيفي </h3>
+    </div>
+    <div class="product-price">
+      <div class="pull-left price">
+        34 $
+      </div>
+      <div class="pull-right quantity">
+        أقل كمية  <span>9-3</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-offset-2 col-md-1 products-cont">
+    <img class="product-img" src="images/girl-3.png" alt="">
+    <div class="product-name">
+      <h2>جاكيت إلوان داز ..</h2>
+      <h3>أفضل أنواع الجواكت الصيفي </h3>
+    </div>
+     <div class="product-price">
+        <div class="pull-left price">
+        34 $
+        </div>
+        <div class="pull-right quantity">
+        أقل كمية  <span>9-3</span>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--/products -->
+  </div>
+</div>
+<!-- /navbar -->
+
+<!-- start products section -->
+<section class="our-products">
+  <div class="hr-logo"></div>
+  <div class="container">
+    <div class="navbar-right tabs-logo">
+      <img src="images/tab-icon.png" alt="">
+      <h2>منتجات</h2>
+      <img src="images/logo2.png" alt="">
+    </div>
+
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs navbar-left" role="tablist">
+      <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">منتجات مميزة</a></li>
+      <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">أفضل المنتجات</a></li>
+      <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">الأكثر مبيعاً</a></li>
+    </ul>
+    </div>
+</section>
+<!-- right side -->
+<section class="right-side bg-carte">
+  <div class="container">
+    <div class="row"> <!--main row-->
+      <div class="col-md-3 "><!--list-->
+        <img src="images/caret-buy.png" alt="">
+        <h3 class="carte-title">السلة الخاصة بك</h3>
+          <div class="row">
+            <div class="border-left"></div>
+            <div class="border-right"></div>
+            <div class="col-md-4">
+            <div class="t-shirt-bg"><img src="images/t-shirt.png" alt=""></div>
+            </div>
+            <div class="col-md-4">
+              <p class="t-shirt-p">قميص رجالى مصنف</p>
+              <p class="t-shirt-p2">قميص رجالى مصنف براند  ..</p>
+            </div>
+            <div class="col-md-4">
+              <div class="x-icon">
+                <a href="#"><i class="fa fa-times-circle" style="margin-top:17px;"></i></a>
+              </div>
+            </div>
+            <div class="col-md-8 col-md-offset-4">
+              <span>12$/5-99 32/10-29 38$/1-9</span>
+            </div>
+            <div class="border-buttom"></div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="t-shirt-bg"><img src="images/t-shirt.png" alt=""></div>
+            </div>
+            <div class="col-md-4">
+              <p class="t-shirt-p">قميص رجالى مصنف</p>
+              <p class="t-shirt-p2">قميص رجالى مصنف براند  ..</p>
+            </div>
+            <div class="col-md-4">
+              <div class="x-icon">
+                <a href="#"><i class="fa fa-times-circle" style="margin-top:17px;"></i></a>
+              </div>
+            </div>
+            <div class="col-md-8 col-md-offset-4">
+              <span>12$/5-99 32/10-29 38$/1-9</span>
+            </div>
+            <div class="border-buttom"></div>
+          </div>
+
+          <form action="#" class="pro-list">
+            <p>
+              <input type="checkbox" id="test1" />
+              <label for="test1">إكسسورات الحزام</label>
+            </p>
+            <p>
+              <input type="checkbox" id="test2" />
+              <label for="test2">الأحزمة</label>
+            </p>
+            <p>
+              <input type="checkbox" id="test3" />
+              <label for="test3">خدمات تصميم الأزياء</label>
+            </p>
+            <p>
+              <input type="checkbox" id="test4" />
+              <label for="test4">أغطية الرأس</label>
+            </p>
+            <p>
+              <input type="checkbox" id="test5" />
+              <label for="test5">ربطات العنق (كرافتات)</label>
+            </p>
+            <p>
+              <input type="checkbox" id="test6" />
+              <label for="test6">قفاز قبعة صوف</label>
+            </p>
+            <p>
+              <input type="checkbox" id="test7" />
+              <label for="test7">قبعات وكابات </label>
+            </p>
+            <p>
+              <input type="checkbox" id="test8" />
+              <label for="test8">الأوشحة والشالات</label>
+            </p>
+            <p>
+              <input type="checkbox" id="test9" />
+              <label for="test9">إكسسورات الشعر</label>
+            </p>
+            <p>
+              <input type="checkbox" id="test10" />
+              <label for="test10">أحزمة جلد حقيقى </label>
+            </p>
+            <button type="button" name="button" class="btn btn-default btn-block more-button">قم بعرض أقسام أكثر <i class="fa fa-arrow-down"></i></button>
+         </form>
+      </div><!--/list-->
+<div role="tabpanel" class="tab-pane fade in active" id="home">
+      <div class="col-md-offset-1 col-md-8 left-side"><!--pro-list-->
+        <div class="row for-padding"><!--صف التلت منتجات-->
+          <div class="col-md-4">
+            <img class="img-responsive products-imges" src="images/product-1.png" alt="">
+            <h2>قميص عرب فادكون</h2>
+            <p>الكمية 100-30 = 23$</p>
+            <div class="dropdown spical-drop">
+              <button class="btn btn-default dropdown-toggle drop-button" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                الكميات
+                <i class="fa fa-sort-desc"></i>
+              </button>
+              <ul class="dropdown-menu drop-s" aria-labelledby="dropdownMenu1">
+                <li><a href="#"><i class="fa fa-navicon"></i> اللون</a></li>
+                <li><a href="#"><i class="fa fa-pencil"></i> الحجم</a></li>
+                <li><a href="#"><i class="fa fa-tasks"></i> العدد</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <img class="img-responsive products-imges" src="images/product-2.png" alt="">
+            <h2>قميص عرب فادكون</h2>
+            <p>الكمية 100-30 = 23$</p>
+            <div class="dropdown spical-drop">
+              <button class="btn btn-default dropdown-toggle drop-button" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                الكميات
+                <i class="fa fa-sort-desc"></i>
+              </button>
+              <ul class="dropdown-menu drop-s" aria-labelledby="dropdownMenu1">
+                <li><a href="#"><i class="fa fa-navicon"></i> اللون</a></li>
+                <li><a href="#"><i class="fa fa-pencil"></i> الحجم</a></li>
+                <li><a href="#"><i class="fa fa-tasks"></i> العدد</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <img class="img-responsive products-imges" src="images/product-3.png" alt="">
+            <h2>قميص عرب فادكون</h2>
+            <p>الكمية 100-30 = 23$</p>
+            <div class="dropdown spical-drop">
+              <button class="btn btn-default dropdown-toggle drop-button" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                الكميات
+                <i class="fa fa-sort-desc"></i>
+              </button>
+              <ul class="dropdown-menu drop-s" aria-labelledby="dropdownMenu1">
+                <li><a href="#"><i class="fa fa-navicon"></i> اللون</a></li>
+                <li><a href="#"><i class="fa fa-pencil"></i> الحجم</a></li>
+                <li><a href="#"><i class="fa fa-tasks"></i> العدد</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div><!--/صف التلت منتجات-->
+
+        <div class="row for-padding-2"><!--2صف التلت منتجات-->
+          <div class="col-md-4">
+            <img class="img-responsive products-imges" src="images/product-4.png" alt="">
+            <h2>قميص عرب فادكون</h2>
+            <p>الكمية 100-30 = 23$</p>
+            <div class="dropdown spical-drop">
+              <button class="btn btn-default dropdown-toggle drop-button" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                الكميات
+                <i class="fa fa-sort-desc"></i>
+              </button>
+              <ul class="dropdown-menu drop-s" aria-labelledby="dropdownMenu1">
+                <li><a href="#"><i class="fa fa-navicon"></i> اللون</a></li>
+                <li><a href="#"><i class="fa fa-pencil"></i> الحجم</a></li>
+                <li><a href="#"><i class="fa fa-tasks"></i> العدد</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <img class="img-responsive products-imges" src="images/product-5.png" alt="">
+            <h2>قميص عرب فادكون</h2>
+            <p>الكمية 100-30 = 23$</p>
+            <div class="dropdown spical-drop">
+              <button class="btn btn-default dropdown-toggle drop-button" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                الكميات
+                <i class="fa fa-sort-desc"></i>
+              </button>
+              <ul class="dropdown-menu drop-s" aria-labelledby="dropdownMenu1">
+                <li><a href="#"><i class="fa fa-navicon"></i> اللون</a></li>
+                <li><a href="#"><i class="fa fa-pencil"></i> الحجم</a></li>
+                <li><a href="#"><i class="fa fa-tasks"></i> العدد</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <img class="img-responsive products-imges" src="images/product-6.png" alt="">
+            <h2>قميص عرب فادكون</h2>
+            <p>الكمية 100-30 = 23$</p>
+            <div class="dropdown spical-drop">
+              <button class="btn btn-default dropdown-toggle drop-button" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                الكميات
+                <i class="fa fa-sort-desc"></i>
+              </button>
+              <ul class="dropdown-menu drop-s" aria-labelledby="dropdownMenu1">
+                <li><a href="#"><i class="fa fa-navicon"></i> اللون</a></li>
+                <li><a href="#"><i class="fa fa-pencil"></i> الحجم</a></li>
+                <li><a href="#"><i class="fa fa-tasks"></i> العدد</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div><!--/2صف التلت منتجات-->
+
+        <button type="button" name="button" class="btn btn-default btn-block more-button for-width">قم بعرض منتجات أكثر <i class="fa fa-arrow-down"></i></button>
+
+</div>
+      </div><!--/pro-list-->
+    </div><!--/main row-->
+  </div>
+</section>
+<!-- / products section -->
+
+<!-- man section -->
+<section class="man">
+  <div class="container text-center">
+    <a href="#"><button type="button" name="button" class="btn btn-default man-button"><img src="images/categories-icon-4.png"/>الأوشحة والشالات</button></a>
+    <a href="#"><button type="button" name="button" class="btn btn-default man-button"><img src="images/categories-icon-1.png"/>ملابس الرجال</button></a>
+    <a href="#"><button type="button" name="button" class="btn btn-default man-button"><img src="images/categories-icon-2.png"/>ربطات العنق</button></a>
+    <a href="#"><button type="button" name="button" class="btn btn-default man-button"><img src="images/categories-icon-3.png"/>أحزمة جلد حقيقى</button></a>
+    <a href="#"><button type="button" name="button" class="btn btn-default man-button"><img src="images/categories-icon-7.png"/>قباعات وكابات</button></a>
+    <div class="man-product">
+
+      <div class="bg-image">
+        <img src="images/man-5.png" style="display:inline;" alt="" class="img-responsive man-image"/>
+        <h2>قميص عرب فادكون</h2>
+        <div class="dropdown spical-drop">
+          <button class="btn btn-default dropdown-toggle drop-button" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            الكميات
+            <i class="fa fa-sort-desc"></i>
+          </button>
+          <ul class="dropdown-menu drop-s" aria-labelledby="dropdownMenu1">
+            <li><a href="#"><i class="fa fa-navicon"></i> اللون</a></li>
+            <li><a href="#"><i class="fa fa-pencil"></i> الحجم</a></li>
+            <li><a href="#"><i class="fa fa-tasks"></i> العدد</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="bg-image">
+        <img src="images/man-4.png" style="display:inline;" alt="" class="img-responsive man-image"/>
+        <h2>قميص عرب فادكون</h2>
+        <div class="dropdown spical-drop">
+          <button class="btn btn-default dropdown-toggle drop-button" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            الكميات
+            <i class="fa fa-sort-desc"></i>
+          </button>
+          <ul class="dropdown-menu drop-s" aria-labelledby="dropdownMenu1">
+            <li><a href="#"><i class="fa fa-navicon"></i> اللون</a></li>
+            <li><a href="#"><i class="fa fa-pencil"></i> الحجم</a></li>
+            <li><a href="#"><i class="fa fa-tasks"></i> العدد</a></li>
+          </ul>
+        </div>
+      </div>
+
+
+        <div class="bg-image">
+          <img src="images/man-3.png" style="display:inline;" alt="" class="img-responsive man-image"/>
+          <h2>قميص عرب فادكون</h2>
+          <div class="dropdown spical-drop">
+            <button class="btn btn-default dropdown-toggle drop-button" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              الكميات
+              <i class="fa fa-sort-desc"></i>
+            </button>
+            <ul class="dropdown-menu drop-s" aria-labelledby="dropdownMenu1">
+              <li><a href="#"><i class="fa fa-navicon"></i> اللون</a></li>
+              <li><a href="#"><i class="fa fa-pencil"></i> الحجم</a></li>
+              <li><a href="#"><i class="fa fa-tasks"></i> العدد</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="bg-image">
+          <img src="images/man-2.png" style="display:inline;" alt="" class="img-responsive man-image"/>
+          <h2>قميص عرب فادكون</h2>
+          <div class="dropdown spical-drop">
+            <button class="btn btn-default dropdown-toggle drop-button" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              الكميات
+              <i class="fa fa-sort-desc"></i>
+            </button>
+            <ul class="dropdown-menu drop-s" aria-labelledby="dropdownMenu1">
+              <li><a href="#"><i class="fa fa-navicon"></i> اللون</a></li>
+              <li><a href="#"><i class="fa fa-pencil"></i> الحجم</a></li>
+              <li><a href="#"><i class="fa fa-tasks"></i> العدد</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="bg-image">
+          <img src="images/man-1.png" style="display:inline;" alt="" class="img-responsive man-image"/>
+          <h2>قميص عرب فادكون</h2>
+          <div class="dropdown spical-drop">
+            <button class="btn btn-default dropdown-toggle drop-button" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              الكميات
+              <i class="fa fa-sort-desc"></i>
+            </button>
+            <ul class="dropdown-menu drop-s" aria-labelledby="dropdownMenu1">
+              <li><a href="#"><i class="fa fa-navicon"></i> اللون</a></li>
+              <li><a href="#"><i class="fa fa-pencil"></i> الحجم</a></li>
+              <li><a href="#"><i class="fa fa-tasks"></i> العدد</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /man section -->
+
+<!-- more product section -->
+<section class="more-products">
+  <div class="container">
+    <img src="images/most-buy.png" class="more-title-img" alt="">
+    <h3>الأكثر مبيعاً</h3>
+
+    <div class="row">
+      <div class="col-md-1"><img src="images/t1.png" class="img-responsive more-img" alt=""></div>
+      <div class="col-md-3">
+        <h2>قميص عرب فادكون</h2>
+        <p>الكمية 100-30 = 23$</p>
+        <div class="dropdown spical-drop">
+          <button class="btn btn-default dropdown-toggle drop-button" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            الكميات
+            <i class="fa fa-sort-desc"></i>
+          </button>
+          <ul class="dropdown-menu drop-s" aria-labelledby="dropdownMenu1">
+            <li><a href="#"><i class="fa fa-navicon"></i> اللون</a></li>
+            <li><a href="#"><i class="fa fa-pencil"></i> الحجم</a></li>
+            <li><a href="#"><i class="fa fa-tasks"></i> العدد</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-1"><img src="images/t2.png" class="img-responsive more-img" alt=""></div>
+      <div class="col-md-3">
+        <h2>قميص عرب فادكون</h2>
+        <p>الكمية 100-30 = 23$</p>
+        <div class="dropdown spical-drop">
+          <button class="btn btn-default dropdown-toggle drop-button" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            الكميات
+            <i class="fa fa-sort-desc"></i>
+          </button>
+          <ul class="dropdown-menu drop-s" aria-labelledby="dropdownMenu1">
+            <li><a href="#"><i class="fa fa-navicon"></i> اللون</a></li>
+            <li><a href="#"><i class="fa fa-pencil"></i> الحجم</a></li>
+            <li><a href="#"><i class="fa fa-tasks"></i> العدد</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-1"><img src="images/t3.png" class="img-responsive more-img" alt=""></div>
+      <div class="col-md-3">
+        <h2>قميص عرب فادكون</h2>
+        <p>الكمية 100-30 = 23$</p>
+        <div class="dropdown spical-drop">
+          <button class="btn btn-default dropdown-toggle drop-button" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            الكميات
+            <i class="fa fa-sort-desc"></i>
+          </button>
+          <ul class="dropdown-menu drop-s" aria-labelledby="dropdownMenu1">
+            <li><a href="#"><i class="fa fa-navicon"></i> اللون</a></li>
+            <li><a href="#"><i class="fa fa-pencil"></i> الحجم</a></li>
+            <li><a href="#"><i class="fa fa-tasks"></i> العدد</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+      <div class="row">
+        <div class="col-md-1"><img src="images/t5.png" class="img-responsive more-img" alt=""></div>
+
+        <div class="col-md-3">
+          <h2>قميص عرب فادكون</h2>
+          <p>الكمية 100-30 = 23$</p>
+          <div class="dropdown spical-drop">
+            <button class="btn btn-default dropdown-toggle drop-button" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              الكميات
+              <i class="fa fa-sort-desc"></i>
+            </button>
+            <ul class="dropdown-menu drop-s" aria-labelledby="dropdownMenu1">
+              <li><a href="#"><i class="fa fa-navicon"></i> اللون</a></li>
+              <li><a href="#"><i class="fa fa-pencil"></i> الحجم</a></li>
+              <li><a href="#"><i class="fa fa-tasks"></i> العدد</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-1"><img src="images/t1.png" class="img-responsive more-img" alt=""></div>
+        <div class="col-md-3">
+          <h2>قميص عرب فادكون</h2>
+          <p>الكمية 100-30 = 23$</p>
+          <div class="dropdown spical-drop">
+            <button class="btn btn-default dropdown-toggle drop-button" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              الكميات
+              <i class="fa fa-sort-desc"></i>
+            </button>
+            <ul class="dropdown-menu drop-s" aria-labelledby="dropdownMenu1">
+              <li><a href="#"><i class="fa fa-navicon"></i> اللون</a></li>
+              <li><a href="#"><i class="fa fa-pencil"></i> الحجم</a></li>
+              <li><a href="#"><i class="fa fa-tasks"></i> العدد</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-1"><img src="images/t4.png" class="img-responsive more-img" alt=""></div>
+
+        <div class="col-md-3">
+          <h2>قميص عرب فادكون</h2>
+          <p>الكمية 100-30 = 23$</p>
+          <div class="dropdown spical-drop">
+            <button class="btn btn-default dropdown-toggle drop-button" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              الكميات
+              <i class="fa fa-sort-desc"></i>
+            </button>
+            <ul class="dropdown-menu drop-s" aria-labelledby="dropdownMenu1">
+              <li><a href="#"><i class="fa fa-navicon"></i> اللون</a></li>
+              <li><a href="#"><i class="fa fa-pencil"></i> الحجم</a></li>
+              <li><a href="#"><i class="fa fa-tasks"></i> العدد</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+        <div class="row">
+          <div class="col-md-1"><img src="images/t4.png" class="img-responsive more-img" alt=""></div>
+
+          <div class="col-md-3">
+            <h2>قميص عرب فادكون</h2>
+            <p>الكمية 100-30 = 23$</p>
+            <div class="dropdown spical-drop">
+              <button class="btn btn-default dropdown-toggle drop-button" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                الكميات
+                <i class="fa fa-sort-desc"></i>
+              </button>
+              <ul class="dropdown-menu drop-s" aria-labelledby="dropdownMenu1">
+                <li><a href="#"><i class="fa fa-navicon"></i> اللون</a></li>
+                <li><a href="#"><i class="fa fa-pencil"></i> الحجم</a></li>
+                <li><a href="#"><i class="fa fa-tasks"></i> العدد</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-1"><img src="images/t3.png" class="img-responsive more-img" alt=""></div>
+
+          <div class="col-md-3">
+            <h2>قميص عرب فادكون</h2>
+            <p>الكمية 100-30 = 23$</p>
+            <div class="dropdown spical-drop">
+              <button class="btn btn-default dropdown-toggle drop-button" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                الكميات
+                <i class="fa fa-sort-desc"></i>
+              </button>
+              <ul class="dropdown-menu drop-s" aria-labelledby="dropdownMenu1">
+                <li><a href="#"><i class="fa fa-navicon"></i> اللون</a></li>
+                <li><a href="#"><i class="fa fa-pencil"></i> الحجم</a></li>
+                <li><a href="#"><i class="fa fa-tasks"></i> العدد</a></li>
+              </ul>
+            </div>
+          </div>
+
+
+          <div class="col-md-1"><img src="images/t5.png" class="img-responsive more-img" alt=""></div>
+
+          <div class="col-md-3">
+            <h2>قميص عرب فادكون</h2>
+            <p>الكمية 100-30 = 23$</p>
+            <div class="dropdown spical-drop">
+              <button class="btn btn-default dropdown-toggle drop-button" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                الكميات
+                <i class="fa fa-sort-desc"></i>
+              </button>
+              <ul class="dropdown-menu drop-s" aria-labelledby="dropdownMenu1">
+                <li><a href="#"><i class="fa fa-navicon"></i> اللون</a></li>
+                <li><a href="#"><i class="fa fa-pencil"></i> الحجم</a></li>
+                <li><a href="#"><i class="fa fa-tasks"></i> العدد</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+          <div class="row">
+            <div class="col-md-1"><img src="images/t5.png" class="img-responsive more-img" alt=""></div>
+
+            <div class="col-md-3">
+              <h2>قميص عرب فادكون</h2>
+              <p>الكمية 100-30 = 23$</p>
+              <div class="dropdown spical-drop">
+                <button class="btn btn-default dropdown-toggle drop-button" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  الكميات
+                  <i class="fa fa-sort-desc"></i>
+                </button>
+                <ul class="dropdown-menu drop-s" aria-labelledby="dropdownMenu1">
+                  <li><a href="#"><i class="fa fa-navicon"></i> اللون</a></li>
+                  <li><a href="#"><i class="fa fa-pencil"></i> الحجم</a></li>
+                  <li><a href="#"><i class="fa fa-tasks"></i> العدد</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-md-1"><img src="images/t1.png" class="img-responsive more-img" alt=""></div>
+
+            <div class="col-md-3">
+              <h2>قميص عرب فادكون</h2>
+              <p>الكمية 100-30 = 23$</p>
+              <div class="dropdown spical-drop">
+                <button class="btn btn-default dropdown-toggle drop-button" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  الكميات
+                  <i class="fa fa-sort-desc"></i>
+                </button>
+                <ul class="dropdown-menu drop-s" aria-labelledby="dropdownMenu1">
+                  <li><a href="#"><i class="fa fa-navicon"></i> اللون</a></li>
+                  <li><a href="#"><i class="fa fa-pencil"></i> الحجم</a></li>
+                  <li><a href="#"><i class="fa fa-tasks"></i> العدد</a></li>
+                </ul>
+              </div>
+            </div>
+
+
+            <div class="col-md-1"><img src="images/t4.png" class="img-responsive more-img" alt=""></div>
+
+            <div class="col-md-3">
+              <h2>قميص عرب فادكون</h2>
+              <p>الكمية 100-30 = 23$</p>
+              <div class="dropdown spical-drop">
+                <button class="btn btn-default dropdown-toggle drop-button" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  الكميات
+                  <i class="fa fa-sort-desc"></i>
+                </button>
+                <ul class="dropdown-menu drop-s" aria-labelledby="dropdownMenu1">
+                  <li><a href="#"><i class="fa fa-navicon"></i> اللون</a></li>
+                  <li><a href="#"><i class="fa fa-pencil"></i> الحجم</a></li>
+                  <li><a href="#"><i class="fa fa-tasks"></i> العدد</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+</section>
+<!-- /more product section -->
+
+<!-- footer -->
+<section class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <h2>أقسام يالا الصين</h2>
+        <ul class="list-unstyled">
+          <li><a href="#">الزراعة والغذاء</a></li>
+          <li><a href="#">الملابس والأكسسورات</a></li>
+          <li><a href="#">السيارات والنقل</a></li>
+          <li><a href="#">الحقائب والأحذية</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-3">
+        <h2>لماذا يالا الصين</h2>
+        <ul class="list-unstyled">
+          <li><a href="#">أبدأ البيع الان !</a></li>
+          <li><a href="#">ما هى الطريقة الصحيحة ؟</a></li>
+          <li><a href="#">كيفية عمل الموقع ؟</a></li>
+          <li><a href="#">يالا الصين فى سطور</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-3">
+        <h2>أقسام يالا الصين</h2>
+        <ul class="list-unstyled">
+          <li><a href="#">الزراعة والغذاء</a></li>
+          <li><a href="#">الملابس والأكسسورات</a></li>
+          <li><a href="#">السيارات والنقل</a></li>
+          <li><a href="#">الحقائب والأحذية</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-3">
+        <h2>لماذا يالا الصين</h2>
+        <ul class="list-unstyled">
+          <li><a href="#">أبدأ البيع الان !</a></li>
+          <li><a href="#">ما هى الطريقة الصحيحة ؟</a></li>
+          <li><a href="#">كيفية عمل الموقع ؟</a></li>
+          <li><a href="#">يالا الصين فى سطور</a></li>
+        </ul>
+      </div>
+      <img src="images/footer-4.png" alt="" class="img-responsive"/>
+      <img src="images/footer-3.png" alt="" class="img-responsive"/>
+      <img src="images/footer-2.png" alt="" class="img-responsive"/>
+      <img src="images/footer-1.png" alt="" class="img-responsive"/>
+      <div class="clearfix"></div>
+      <hr>
+      <span>&copy; جميع الحقوق محفوظة لموقع يالا الصين لعام 2017-2018</span>
+      <div class="bottom text-center">
+        <a href="#">من نحن</a>
+        <a href="#">سياسة الاستخدام</a>
+        <a href="#">حقوق المستخدم</a>
+        <a href="#">اسئلة شائعة</a>
+        <a href="#">تواصل معنا</a>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+<!-- /footer -->
+
+
+
+
+<!--------------------------------------------------------------------------------------------->
+
+  <!-- nice scroll -->
+  <script src="js/jquery.nicescroll.min.js"></script>
+  <!-- swiper -->
+  <script src="js/swiper.min.js"></script>
+  <!-- Main js -->
+  <script src="js/main.js"></script>
+  </body>
+</html>
